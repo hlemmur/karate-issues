@@ -1,3 +1,4 @@
+@parallel=false
 Feature: TestSet 2
 
   Background:
@@ -7,7 +8,6 @@ Feature: TestSet 2
   Scenario: scenario1
     * call read('sleep.feature') {testSetId: testSetId, scenarioId: 'Scenario1'}
 
-  @parallel=false
   Scenario: scenario2
     * call read('sleep.feature') {testSetId: testSetId, scenarioId: 'Scenario2'}
 

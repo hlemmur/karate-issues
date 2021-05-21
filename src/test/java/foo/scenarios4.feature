@@ -1,3 +1,4 @@
+@parallel=false
 Feature: TestSet 3
 
   Background:
