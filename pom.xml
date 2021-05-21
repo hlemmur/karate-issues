@@ -26,6 +26,11 @@
             <artifactId>karate-junit4</artifactId>
             <version>${karate.version}</version>
         </dependency>
+        <!--dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-apache</artifactId>
+            <version>${karate.version}</version>
+        </dependency-->
     </dependencies>
 
     <build>
