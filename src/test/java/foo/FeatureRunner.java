@@ -3,6 +3,7 @@ package foo;
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
 public class FeatureRunner {
@@ -12,7 +13,8 @@ public class FeatureRunner {
                 "classpath:foo/scenarios1.feature",
                 "classpath:foo/scenarios2.feature",
                 "classpath:foo/scenarios3.feature",
-                "classpath:foo/scenarios4.feature"
+                "classpath:foo/scenarios4.feature",
+                "classpath:foo/scenario-outlines.feature"
         };
 
         Results results = Runner.path(paths)

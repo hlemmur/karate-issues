@@ -5,6 +5,7 @@ Feature: TestSet 4
     * callonce read('utils.feature')
     * def testSetId = 'TestSet4'
 
+  @release=2.9.1
   Scenario: scenario1
     * call read('sleep.feature') {testSetId: '#(testSetId)', scenarioId: 'Scenario1'}
 
