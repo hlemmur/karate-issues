@@ -4,16 +4,16 @@ Feature: TestSet 5
     * callonce read('utils.feature')
 
   @release=2.9.0
-  Scenario Outline: Execute <ScenarioId> from <testSetId>.
-    * call read('sleep.feature') {testSetId: '#(testSetId)', scenarioId: 'Scenario1'}
+  Scenario Outline: Test example <testExampleId>. Execute <scenarioId> from <testSetId>.
+    * call read('sleep.feature') {testSetId: '#(testSetId)', scenarioId: '#(scenarioId)'}
 
     @scenarioOneAndTwo
     Examples:
-      | testSetId | ScenarioId |
-      | TestSet5 | Scenario1 |
-      | TestSet5 | Scenario2 |
+      |testExampleId | testSetId | scenarioId |
+      | 1            | TestSet5  | Scenario1  |
+      | 2            | TestSet5  | Scenario2  |
 
     @scenarioThree
     Examples:
-      | testSetId | ScenarioId |
-      | TestSet5 | Scenario3 |
+      |testExampleId | testSetId | scenarioId |
+      | 3            | TestSet5  | Scenario3  |
